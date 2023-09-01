@@ -8,6 +8,6 @@ also Express.js to handle the api and be the bridge between the pqSQL and the fr
 
 After creating the react project and installing everything, I just wanted to play around the react environment to better understand it:
 
-![website after 1st commit](/react-d3-app/history-git/Capture.PNG "Title")
+![website after 1st commit](/history-git/Capture.PNG "Title")
 
 
