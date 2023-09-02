@@ -13,4 +13,4 @@ After setting up the React project and installing the necessary dependencies, I 
 
 To create graphs based on real data, I chose to use data from an API endpoint I set up. While I could have loaded the data from a CSV file, this approach would have imposed a significant processing burden on the frontend and raised security concerns. To create this API endpoint, I utilized Express.js to execute a SQL query to PostgreSQL and then converted the retrieved data into JSON format. The data is sent to a different server, which still resides on localhost but uses a different port, specifically at http://localhost:5000/api/data.
 
-<img src="history-git/Capture2.PNG" alt="website after 1st commit" style="width: 70%;">
+<img src="history-git/Capture2.PNG" alt="website after 1st commit">
