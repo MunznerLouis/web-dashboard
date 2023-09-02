@@ -32,11 +32,10 @@ function D3Chart({ data }) {
 
     // Append a path element to the SVG to display the line
     svg.append('path')
-      .datum(dataset)
-      .attr('fill', 'none')
-      .attr('stroke', '#F0F0F0')
-      .attr('stroke-width', 2)
-      .attr('d', line);
+    .datum(dataset)
+    .attr('d', line)
+    .attr('class', 'path-line'); // Apply the CSS class
+  
 
     // Add x-axis
     svg.append('g')

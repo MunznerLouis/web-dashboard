@@ -54,3 +54,10 @@
     transform: rotate(360deg);
   }
 }
+
+.path-line {
+  fill: none;
+  stroke: white;
+  stroke-width: 1;
+  stroke-linejoin: round;
+}
