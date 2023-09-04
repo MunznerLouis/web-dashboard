@@ -1,24 +1,36 @@
 // src/App.js
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
-import D3Chart from './components/D3chart.js';
+import DonutChartComponent from './components/D3chart';
+import Footer from './footer/footer.js';
 
 function App() {
-  // Dummy data for visualization
-  const data = [1, 2, 3, 4, 5];
+  const [chartData, setChartData] = useState([]);
+
+  useEffect(() => {
+    // Fetch data from your endpoint (http://localhost:5000/api/data)
+    fetch('http://localhost:5000/api/data')
+      .then(response => response.json())
+      .then(data => {
+        setChartData(data);
+      })
+      .catch(error => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
 
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Cool graph uh ?</h1>
+        <h1>Graph de fou</h1>
       </header>
       <main>
-        <div className="in-between-space"></div>
         <div className="App-chart">
-          <D3Chart data={data} />
+          <DonutChartComponent data={chartData} title="Most picked ADC for each region in percentage" />
         </div>
-      </main>
+        <Footer/>
+      </main>   
     </div>
   );
 }

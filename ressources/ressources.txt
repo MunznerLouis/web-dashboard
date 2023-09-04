@@ -1,0 +1,6 @@
+Color palette : 
+
+#121212      40%    noir primary
+#292929      30%    grey secondary
+#bb86fc      20%    color primary 
+#03dac6      10%    color secondary
