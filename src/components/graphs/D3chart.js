@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
+import './donut-chart.css';
 
 function BarChartComponent({ data, title }) {
   const svgRef = useRef();
@@ -76,9 +77,11 @@ function BarChartComponent({ data, title }) {
   }, [data, title]);
 
   return (
-    <svg ref={svgRef} width={600} height={400}>
+
+    <svg className="donut-chart" ref={svgRef} width={600} height={400}>
       {}
     </svg>
+
   );
 }
 
