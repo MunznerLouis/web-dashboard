@@ -1,7 +1,7 @@
 import React from 'react';
-import './Privacy-policy.css';
+import './privacyPolicy.css';
 
-const PrivacyPolicy = () => {
+const privacyPolicy = () => {
     return (
         <div className='policy'>
 <h1> Privacy Policy for [YOUR SITE TITLE]</h1>
@@ -48,4 +48,4 @@ By using our website, you hereby consent to our privacy policy and agree to its 
     );
 }
 
-export default PrivacyPolicy;
+export default privacyPolicy;

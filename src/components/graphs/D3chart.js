@@ -78,7 +78,7 @@ function BarChartComponent({ data, title }) {
 
   return (
 
-    <svg className="donut-chart" ref={svgRef} width={600} height={400}>
+    <svg className="donut-chart" ref={svgRef} width={700} height={520}>
       {}
     </svg>
 

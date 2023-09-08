@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './Home.css';
-import DonutChartComponent from '../components/graphs/D3chart';
+import './home.css';
+import DonutChartComponent from '../../components/graphs/D3chart';
 
 export default function Home() {
     const [chartData, setChartData] = useState([]);
@@ -18,8 +18,8 @@ export default function Home() {
     }, []);
   
     return (
-      <div className="Home">
-        <header className="Home-header">
+      <div className="home">
+        <header className="home-header">
           <h1>Graph de fou</h1>
         </header>
 
