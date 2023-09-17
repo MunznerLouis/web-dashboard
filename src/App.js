@@ -11,7 +11,7 @@ import Navbar from './components/navbar/navbar';
 function App() {
   return (
     <Router> 
-      <div>
+
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home/>} />
@@ -21,7 +21,7 @@ function App() {
           <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
         <Footer/>
-      </div>
+
     </Router>
   );
 }

@@ -2,6 +2,11 @@ body {
   margin: 0 0 0 0;
   
   padding: 0 0 0 0;
+
+  background-image: url('/ressources/background_wallp.png');
+  background-size: cover; /* Adjust to fit the viewport */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-color: #121212;
   color: #e0e0e0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

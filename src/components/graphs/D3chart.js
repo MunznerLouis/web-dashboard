@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
-import './donut-chart.css';
+import './graphs.css';
 
 function BarChartComponent({ data, title }) {
   const svgRef = useRef();

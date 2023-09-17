@@ -1,0 +1,21 @@
+
+.bar {
+    fill: #bb86fc; 
+  }
+  
+  .label {
+    fill: white; 
+  }
+  
+  .title {
+    font-size: 18px; 
+  }
+  
+  .x-axis-label {
+    font-size: 14px; 
+  }
+  
+  .y-axis-label {
+    font-size: 14px; 
+  }
+  
