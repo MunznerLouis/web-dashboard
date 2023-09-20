@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
-import './most_banned.css';
+import './best_champions.css';
 
 const MostBannedCurrPatch = ({ data }) => {
   const svgRef = useRef();
@@ -25,10 +25,10 @@ const MostBannedCurrPatch = ({ data }) => {
       .attr('transform', `translate(${margin.left},${margin.top})`);
 
     // Sort the data by ban_count in descending order
-    data.sort((a, b) => b.banPercentage - a.banPercentage);
+    data.sort((a, b) => b.winRate - a.winRate);
 
     // Define the scales for x and y axes
-    const x = d3.scaleLinear().domain([0, d3.max(data, (d) => d.banPercentage)]).range([0, width]);
+    const x = d3.scaleLinear().domain([0, d3.max(data, (d) => d.winRate)]).range([0, width]);
     const y = d3.scaleBand().domain(data.map((d) => d.champion)).range([0, height]).padding(0.1);
 
     // Create the x and y axes
@@ -46,7 +46,7 @@ const MostBannedCurrPatch = ({ data }) => {
       .attr('class', 'bar')
       .attr('x', 0)
       .attr('y', (d) => y(d.champion))
-      .attr('width', (d) => x(d.banPercentage))
+      .attr('width', (d) => x(d.winRate))
       .attr('height', y.bandwidth() * 0.7);
 
     // Add labels to the bars
@@ -57,11 +57,11 @@ svg
   .enter()
   .append('text')
   .attr('class', 'label')
-  .attr('x', (d) => x(d.banPercentage)-2) // Position the labels at the end of the bars with a slight left offset
+  .attr('x', (d) => x(d.winRate)-2) // Position the labels at the end of the bars with a slight left offset
   .attr('y', (d) => y(d.champion) + y.bandwidth() / 2 - 4)
   .attr('dy', '0.35em')
   .style('text-anchor', 'end') // Set text-anchor to 'end' for right alignment
-  .text((d) => `${d.banPercentage}%`);
+  .text((d) => `${d.winRate}%`);
 
 
 

@@ -2,6 +2,6 @@ Color palette :
 
 #121212     Black primary
 #292929     Grey secondary
-#bb86fc     color primary (light purple)
-#03dac6     color secondary (Cyan)
+#cce8c3     color primary (light purple)
+#e38270     color secondary (Cyan)
 #e0e0e0     White

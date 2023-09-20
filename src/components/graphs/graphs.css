@@ -6,15 +6,13 @@
 display: flex;
 align-items: center;
 justify-content: center;
+flex-wrap: wrap;
   }
 
 .graph_container1-1{
   background-color: #292929;
-  border: 1px solid #03dac6;
-  height:200px;
-  width:300px;
-  margin-left: 10px;
-  margin-right: 10px;
+  border: 1px solid #cce8c3;
+  margin: 15px;
   border-radius: 10px; /* Adjust the radius as needed */
   padding: 20px; /* Add padding to your liking */
 }
